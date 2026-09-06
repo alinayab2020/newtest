@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#02090c" />
+  <meta name="color-scheme" content="dark" />
+  <meta name="description" content="روایت سینمایی و تعاملی فارغ‌التحصیلی پزشکی دانشگاه علوم پزشکی مازندران؛ با ویدیوی فریم‌به‌فریم کنترل‌شونده با اسکرول و فصل‌های پیوسته." />
+  <title>روایت پزشک شدن | MAZUMS Medical Graduation</title>
+  <link rel="preload" as="image" href="./assets/hero-poster.webp" fetchpriority="high" />
+  <link rel="preload" as="image" href="./assets/hero-backdrop.webp" fetchpriority="high" />
+  <link rel="stylesheet" href="./src/styles.css" />
+</head>
+<body>
+  <div class="boot" id="boot" role="status" aria-live="polite">
+    <div class="boot__mark" aria-hidden="true"><span>M</span><i></i></div>
+    <p>MAZUMS / CINEMA ENGINE</p>
+    <div class="boot__progress"><i id="bootRail"></i></div>
+    <div class="boot__meta"><b id="bootPercent">۰٪</b><span id="bootLabel">در حال آماده‌سازی فیلم…</span></div>
+  </div>
+
+  <div class="app" id="app">
+    <header class="topbar">
+      <a class="brand" href="#chapter-0" data-jump="0" aria-label="بازگشت به آغاز">
+        <span class="brand__mark">M</span>
+        <span><b>علوم پزشکی مازندران</b><small>MAZUMS · MEDICAL GRADUATION 2026</small></span>
+      </a>
+      <div class="topbar__actions">
+        <button class="sound" id="soundToggle" type="button" aria-pressed="false" aria-label="فعال کردن صدای محیطی"><i></i><i></i><i></i></button>
+        <button class="jump-grad" type="button" data-jump="4"><span>لحظه فارغ‌التحصیلی</span><b>↙</b></button>
+      </div>
+    </header>
+
+    <aside class="timeline" aria-label="فصل‌های روایت">
+      <div class="timeline__rail"><i id="timelineFill"></i></div>
+      <button class="timeline__item is-active" data-jump="0"><span>00</span><b>پیش‌درآمد</b></button>
+      <button class="timeline__item" data-jump="1"><span>01</span><b>ورود</b></button>
+      <button class="timeline__item" data-jump="2"><span>02</span><b>یادگیری</b></button>
+      <button class="timeline__item" data-jump="3"><span>03</span><b>بالین</b></button>
+      <button class="timeline__item" data-jump="4"><span>04</span><b>فارغ‌التحصیلی</b></button>
+      <button class="timeline__item" data-jump="5"><span>05</span><b>آینده</b></button>
+    </aside>
+
+    <main>
+      <section class="journey" id="journey" aria-label="روایت پیوسته مسیر پزشکی">
+        <div class="stage" id="stage">
+          <div class="media-layer" aria-hidden="true">
+            <div class="hero-backdrop"></div>
+
+            <figure class="plate" data-scene="1" data-desktop="./assets/campus-1280.webp" data-mobile="./assets/campus-768.webp"><img alt="" decoding="async" /></figure>
+            <figure class="plate" data-scene="2" data-desktop="./assets/learn-1280.webp" data-mobile="./assets/learn-768.webp"><img alt="" decoding="async" /></figure>
+            <figure class="plate" data-scene="3" data-desktop="./assets/clinical-1280.webp" data-mobile="./assets/clinical-768.webp"><img alt="" decoding="async" /></figure>
+            <figure class="plate" data-scene="4" data-desktop="./assets/graduate-1280.webp" data-mobile="./assets/graduate-768.webp"><img alt="" decoding="async" /></figure>
+            <figure class="plate" data-scene="5" data-desktop="./assets/future-1280.webp" data-mobile="./assets/future-768.webp"><img alt="" decoding="async" /></figure>
+
+            <div class="hero-cinema" id="heroCinema">
+              <div class="video-portal" id="videoPortal">
+                <img class="video-poster" id="videoPoster" src="./assets/hero-poster.webp" alt="" />
+                <video id="heroVideo" muted playsinline preload="metadata" tabindex="-1" aria-hidden="true"></video>
+                <div class="portal-frame"><i></i><i></i><i></i><i></i></div>
+              </div>
+              <div class="film-meta" id="filmMeta"><span>SCROLL / FRAME</span><b id="scrubFrame">001 / 231</b><em id="scrubTimecode">00:00:00</em></div>
+              <div class="film-rail"><i id="scrubRail"></i></div>
+            </div>
+
+            <div class="grade grade--top"></div>
+            <div class="grade grade--side"></div>
+            <div class="grade grade--bottom"></div>
+            <div class="transition-lens" id="transitionLens"></div>
+            <div class="grain"></div>
+            <div class="vignette"></div>
+          </div>
+
+          <div class="depth-core" id="depthCore" aria-hidden="true">
+            <i class="depth-core__ring depth-core__ring--a"></i>
+            <i class="depth-core__ring depth-core__ring--b"></i>
+            <i class="depth-core__ring depth-core__ring--c"></i>
+            <span id="depthGlyph">01</span>
+            <b></b>
+          </div>
+
+          <svg class="continuity" viewBox="0 0 1000 1000" preserveAspectRatio="none" aria-hidden="true">
+            <path class="continuity__ghost" d="M 890 70 C 690 190 790 300 580 390 C 340 490 430 670 150 920" />
+            <path id="continuityLive" class="continuity__live" d="M 890 70 C 690 190 790 300 580 390 C 340 490 430 670 150 920" />
+          </svg>
+
+          <div class="chapter-mark" id="chapterMark" aria-hidden="true">00</div>
+          <div class="hud" aria-hidden="true"><span id="hudChapter">00 / 05</span><b id="hudTitle">SCROLL CINEMA</b><em>SARI · MAZANDARAN · IRAN</em></div>
+
+          <article class="panel panel--hero is-active" data-panel="0" id="chapter-0">
+            <p class="eyebrow"><span>MEDICAL GRADUATION / MAZUMS / 2026</span><i></i></p>
+            <h1><span>هفت سال.</span><em>یک مسیر. یک فیلم.</em></h1>
+            <p class="lede">اسکرول کن؛ ویدیو فریم‌به‌فریم حرکت می‌کند و همان قاب، بدون شکستن حس روایت، ما را از ورود به دانشگاه تا کلاس، بیمارستان، فارغ‌التحصیلی و آینده همراه می‌کند.</p>
+            <div class="hero-actions"><button class="primary" type="button" data-jump="1"><span>وارد روایت شو</span><b>↓</b></button><span class="hero-note">231 FRAMES · SCROLL-LOCKED · PREBUFFERED</span></div>
+          </article>
+
+          <article class="panel panel--right" data-panel="1" id="chapter-1">
+            <p class="section-label"><b>01</b><span>THE THRESHOLD</span></p>
+            <h2>در وارد شدیم؛<br><em>و مسیر شکل گرفت.</em></h2>
+            <p>از اولین روزهای دانشگاه تا راهروهایی که کم‌کم آشنا شدند. این فصل، یک تصویر جدا نیست؛ ادامه‌ی همان حرکت نخست است.</p>
+            <div class="chips"><span>MAZUMS</span><span>MEDICAL SCHOOL</span><span>SARI</span></div>
+          </article>
+
+          <article class="panel panel--left" data-panel="2" id="chapter-2">
+            <p class="section-label"><b>02</b><span>THE YEARS OF LEARNING</span></p>
+            <h2>دیدن کافی نبود؛<br><em>باید فهمید.</em></h2>
+            <p>کلاس، آناتومی، فیزیولوژی و سال‌هایی که نگاه پزشکی را ساختند. دوربین همان مسیر را ادامه می‌دهد؛ فقط جهان اطراف پیچیده‌تر می‌شود.</p>
+            <div class="chips"><span>ANATOMY</span><span>PHYSIOLOGY</span><span>7+ YEARS</span></div>
+          </article>
+
+          <article class="panel panel--right" data-panel="3" id="chapter-3">
+            <p class="section-label"><b>03</b><span>THE CLINICAL MOMENT</span></p>
+            <h2>دانش جلو آمد؛<br><em>و تبدیل به تصمیم شد.</em></h2>
+            <p>در بالین، نور سردتر و ریتم جدی‌تر می‌شود. بیمار واقعی است، تیم واقعی است و مسئولیت دیگر تمرین نیست.</p>
+            <div class="clinical-card" aria-hidden="true"><header><span>LIVE / OR</span><i></i></header><svg viewBox="0 0 420 72"><path d="M0 48H48L60 40L72 58L88 9L104 61L120 48H170L182 40L194 58L210 9L226 61L242 48H292L304 40L316 58L332 9L348 61L364 48H420" /></svg><footer><b>72<small>BPM</small></b><b>98<small>SpO₂</small></b><b>16<small>RR</small></b></footer></div>
+          </article>
+
+          <article class="panel panel--left panel--graduate" data-panel="4" id="chapter-4">
+            <p class="section-label"><b>04</b><span>THE OATH BEGINS</span></p>
+            <h2>به اوج رسیدیم؛<br><em>نه به پایان.</em></h2>
+            <p>کلاه‌ها بالا می‌روند، نور گرم‌تر می‌شود و همان خط داستانی از «دانشجو بودن» به «پزشک بودن» تغییر نام می‌دهد.</p>
+            <div class="chips"><span>GRADUATION</span><span>CLASS OF 2026</span><span>MEDICINE</span></div>
+            <div class="seal" aria-hidden="true"><span>CLASS OF</span><b>2026</b><em>MAZUMS</em></div>
+          </article>
+
+          <article class="panel panel--outro" data-panel="5" id="chapter-5">
+            <p class="eyebrow"><span>THE FUTURE CONTINUES</span><i></i></p>
+            <h2>آخرین قاب،<br><em>اولین قاب آینده است.</em></h2>
+            <p class="lede">تمام فصل‌های قبل در یک مسئولیت جمع می‌شوند: دانشی که باید به درمان، تصمیم، مراقبت و آینده‌ی بهتر تبدیل شود.</p>
+            <div class="hero-actions"><button class="primary" type="button" data-jump="0"><span>بازگشت به آغاز</span><b>↑</b></button><a class="university-link" href="https://www.mazums.ac.ir/" target="_blank" rel="noreferrer">وب‌سایت دانشگاه ↗</a></div>
+          </article>
+
+          <div class="confetti" id="confetti" aria-hidden="true"></div>
+          <div class="scroll-note" id="scrollNote" aria-hidden="true"><i></i><span>SCROLL TO DIRECT THE FILM</span></div>
+          <div class="mobile-progress"><i id="mobileProgress"></i></div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <noscript><div class="noscript">برای مشاهده‌ی تجربه‌ی تعاملی، JavaScript را فعال کنید.</div></noscript>
+  <script src="./src/main.js" defer></script>
+</body>
+</html>
